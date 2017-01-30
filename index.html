@@ -1,0 +1,44 @@
+<html ng-app="calendarApp">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/mycss.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <ul class="nav nav-tabs" ng-init='activeTab=1'>
+            <li ng-class="{ 'active': activeTab == 0 }">
+                <a href="#" ng-click="activeTab=0">View Meetings</a>
+            </li>
+            <li ng-class="{ 'active': activeTab == 1 }">
+                <a href="#" ng-click="activeTab=1">Insert Meeting</a>
+            </li>
+        </ul>
+        <div id="view-meetings" ng-show="activeTab==0">
+            <view-meetings></view-meetings>
+        </div>
+        <div id="insert-meetings" ng-show="activeTab==1">
+            <insert-meetings></insert-meetings>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+
+    <script src="js/angular/services.js"></script>
+    <script src="js/angular/controllers.js"></script>
+    <script src="js/angular/directives.js"></script>
+    <script src="js/angular/app.js"></script>
+
+    <script src="js/moment.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/collapse.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+</body>
+
+</html>
