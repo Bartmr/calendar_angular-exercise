@@ -11,7 +11,7 @@ angular.module('appDirectives',[])
     return {
       restrict: 'E',
       templateUrl: 'partials/insert-meetings.html',
-/*      controller: 'insertMeetingsController',
-      controllerAs: 'insertMeetingsCtrl'*/
+      controller: 'insertMeetingsController',
+      controllerAs: 'insertMeetingsCtrl'
     }
   });
