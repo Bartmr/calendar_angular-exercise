@@ -3,8 +3,8 @@ angular.module('appDirectives',[])
     return {
       restrict: 'E',
       templateUrl: 'partials/view-meetings.html',
-/*      controller: 'viewMeetingsController',
-      controllerAs: 'viewMeetingsTableCtrl'*/
+      controller: 'viewMeetingsController',
+      controllerAs: 'viewMeetingsCtrl'
     }
   })
   .directive('insertMeetings', function () {

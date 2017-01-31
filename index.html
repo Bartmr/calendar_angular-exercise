@@ -12,11 +12,11 @@
 
 </head>
 
-<body>
+<body ng-controller="mainController as mainCtrl">
 
 
     <div id="wrapper">
-        <ul class="nav nav-tabs" ng-init='activeTab=1'>
+        <ul class="nav nav-tabs" ng-init='activeTab=0'>
             <li ng-class="{ 'active': activeTab == 0 }">
                 <a href="#" ng-click="activeTab=0">View Meetings</a>
             </li>
@@ -35,6 +35,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
 
+    <script src="js/angular/ngStorage.min.js"></script>
     <script src="js/angular/services.js"></script>
     <script src="js/angular/controllers.js"></script>
     <script src="js/angular/directives.js"></script>

@@ -1,0 +1,18 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Requested by</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Description URL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="meeting in meetingsList">
+        <td>{{meeting.user}}</td>
+        <td>{{meeting.start}}</td>
+        <td>{{meeting.end}}</td>
+        <td>{{meeting.url}}</td>
+      </tr>
+    </tbody>
+  </table>

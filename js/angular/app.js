@@ -1,1 +1,1 @@
-angular.module('calendarApp',['appServices','appControllers','appDirectives']);
+angular.module('calendarApp',['appServices','appControllers','appDirectives','ngStorage']);
