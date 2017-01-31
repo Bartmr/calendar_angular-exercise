@@ -2,7 +2,7 @@
     
     <div>
     <strong>Name:</strong><br>
-    <input name="name" type="text" ng-required="requireNameAndURL" ng-model="meeting.user" ng-minlength="5" autocomplete=off><br>
+    <input name="name" type="text" required ng-model="meeting.user" ng-minlength="5" autocomplete=off><br>
     <small ng-hide="meetingForm.name.$valid" style="color: #f44242">Write a full name</small><small><br></small>
     </div>
     <div>
@@ -13,7 +13,7 @@
     <input type="text" id="endpicker" ng-model="meeting.end" placeholder="{{meeting.start}}" autocomplete=off></div><br>
     <strong>Info URL:</strong><br>
     <div>
-    <input name="url" type="url" ng-required="requireNameAndURL" ng-model="meeting.url" autocomplete=off><br>
+    <input name="url" type="url" required ng-model="meeting.url" autocomplete=off><br>
     <small ng-hide="meetingForm.url.$valid" style="color: #f44242">Don't forget the http://</small><small><br></small>
     </div>
 

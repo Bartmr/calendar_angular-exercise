@@ -1,7 +1,7 @@
 angular.module('appControllers', [])
     .controller('mainController', function($rootScope){
 
-        $rootScope.requireNameAndURL = true;
+
 
     })
     .controller('insertMeetingsController', function ($scope, meetingsPersistence) {
