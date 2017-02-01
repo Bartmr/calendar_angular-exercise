@@ -11,8 +11,8 @@ angular.module('appControllers', [])
                 $scope.meeting.end=$scope.meeting.start;
             }
 
-            // $scope.meeting.startStringified = $scope.meeting.start.split("/").reverse().join("");
-            // $scope.meeting.endStringified = $scope.meeting.end.split("/").reverse().join("");
+            $scope.meeting.startDateObject = new Date($scope.meeting.start);
+            $scope.meeting.endDateObject = new Date($scope.meeting.end);
             
             meetingsPersistence.pushMeeting($scope.meeting);
             $scope.meeting = undefined;
